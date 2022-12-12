@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SLider con formulario</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="responsiveslides.min.js"></script>
+	<link rel="stylesheet" href="responsiveslides.css">
+	<link rel="stylesheet" href="estilos.css">
+	<script>
+	  $(function() {
+	    $(".rslides").responsiveSlides({
+	    	timeout: 5000
+	    });
+	  });
+	</script>
+</head>
+<body>
+	<div class="slider-wrap">
+		<ul class="rslides">
+		  <li><img src="img/1.jpg" alt=""></li>
+		  <li><img src="img/2.jpg" alt=""></li>
+		  <li><img src="img/3.jpg" alt=""></li>
+		</ul>
+		<div class="slider-container">
+			<div class="form-title">
+				<h1>Ingrese Sus Datos para Contactarlo</h1>
+			</div>
+			<form action="" class="slider-form">
+				<input type="text" name="" id="" placeholder="Nombre">
+				<input type="email" name="" id="" placeholder="Correo">
+				<input type="password" name="" id="" placeholder="Contraseña">
+				<input type="button" value="Crear cuenta">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

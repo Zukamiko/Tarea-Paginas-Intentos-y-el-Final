@@ -1,0 +1,106 @@
+
+.nivoSlider { /*estilo de como se ven los cosos, osea el trance*//*importante*/
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* Si una imagen trae enlace */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* sector de los cuadros deslizante */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Estilos de sub */
+.nivo-caption {
+	position:absolute;
+	top: 40%;
+	left:0px;
+	bottom:0px;
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 25px;
+	color:beige;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	overflow: hidden;
+	display: none;
+	-webkit-text-stroke: 2px black;
+	text-decoration: solid;
+}
+
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+	-webkit-text-stroke: beige;
+	font-size: 35px;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Estilo de nav sea atra o adelante */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer; /*es para que se vea una manita*/
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Ccontrol de las imagenes osea el 1,2,3 */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}

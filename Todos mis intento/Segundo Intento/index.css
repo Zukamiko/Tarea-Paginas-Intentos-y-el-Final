@@ -1,0 +1,303 @@
+/*GENERAL*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    min-height: 100%;
+}
+.contenedor{
+    max-width: 1100px;
+    width: 85%;
+    margin: 0 auto;
+}
+.mrgtp{
+    margin-top: 11rem;
+}
+.fg{
+    font-size: 7rem;
+    margin: 0;
+    font-weight: bold;
+}
+.d-flex{
+    display: flex;
+}
+
+.flex-colum{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-center{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: space-around;
+}
+.alig-start{
+    align-items: flex-start;
+}
+.alig-center{
+    align-items: center;
+}
+.alig-end{
+    align-items: flex-end;
+}
+.doble-colum{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+}
+/*Header*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+.logo{
+    width: 66.6167px;
+    height: 66.6167px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.logo:hover{
+    transform:  scale(1.1, 1.1);
+}
+.logo  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 1rem;
+}
+.nave{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bolder;
+}
+/*como recordatorio 1rem=10px*/
+.nave a{
+    text-decoration: none;
+    padding: 1rem;
+    color: #424242;
+    margin-left: 5rem;
+}
+.nave a:last-child{
+    background-color: #fce80f;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+}
+.nave a:first-child{
+    background-color: #fce80f;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+}
+.nave a:nth-child(2){
+    background-color: #f10800;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    color: white;
+}
+.nave a:nth-child(2):hover{
+    background-color: #000;
+    transition: 0.3s;
+}
+.nave a:nth-child(4){
+    background-color: #f10800;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    color: white;
+}
+.nave a:nth-child(3){
+    background-color: #000000;
+    border-radius: 3rem;
+    padding: 1rem 3rem;
+    color: white;
+}
+/*seccion*/
+.contenido{
+    text-align: left;
+}
+.arre{
+    color: rgb(4, 213, 11);
+    letter-spacing: 5px;
+    font-size: 4rem;
+    margin: 5rem 0 1rem 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.info{
+    margin-top: 1.5rem;
+    width: 40rem;
+    line-height: 3.5rem;
+    color: gray;
+    font-size: 1.8rem;
+}
+.grupo-boton{
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.buton{
+    width: 240px;
+    text-align: center;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 1.2rem 2.5rem;
+    flex-basis: calc(50% - 1rem);
+}
+
+/*boton*/
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+   }
+   
+   button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   button:hover span {
+    color: black;
+   }
+   
+   button::before,
+   button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   button:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+/*Linea*/
+.liniecita{
+    margin-top: 4rem;
+    height: 4px;
+    border-top: 4px dotted gray;
+    padding: 1.8rem 0;
+}
+.Estudi-h2{
+    text-align: center;
+    font-family: Daun;
+    font-size: 25px;
+    color: #225230;
+    display: block;
+}
+.parrafo-Estudi{
+    text-align: center !important;
+    align-items: center;
+    font-family: Avenir;
+    color: #225230;
+    font-size: 20px;
+    width: 600px;
+    margin: 2rem auto;
+    height: 200px;
+}
+@font-face {
+    font-family:Daun;
+    src: url(fuentes/Saudagar.ttf);
+}
+@font-face {
+    font-family: Avenir;
+    src: url(fuentes/AvenirNextLTPro-CnIt.otf);
+}
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ham span{
+    display: block;
+    background: color #ff0000; ;
+    height: 3px;
+    width: 28px;
+    margin: auto;
+    border-radius: 2px;
+}
+@media (max-width:768){
+    body{
+        overflow: hidden;
+    }
+    .logo{
+        padding-left: 25px;
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .nave{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .nave a{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        
+    }
+}
+
+.nave.activado{
+    display: flex;
+}

@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--------------------paso1*/
+
+.theme-mi-slider .nivoSlider{
+	position:relative;
+}
+
+.theme-mi-slider .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+/* Nivo Pagination =========================*/
+
+.nivo-controlNav{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-mi-slider .nivo-control{ /* las bolitas esta de abajo*/
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: #545454;
+	margin: 3px;
+	text-indent: -9999px
+}
+
+.theme-mi-slider .nivo-control:hover{
+	background: #1B1B1B;
+}
+
+.theme-mi-slider .active{
+	background: #1B1B1B;
+}
+
+/* Nivo direcccion ============*/
+.nivo-directionNav a{ /*no olvidarme, las flechita*/
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.nivo-directionNav .nivo-prevNav{
+	background-image: url(../img/icons/circulo-izqui.png);
+	background-size: cover;
+	text-indent: -9999px;
+	left: 6px;
+}
+
+.nivo-directionNav .nivo-nextNav{
+	background-image: url(../img/icons/circu-deredere.png);
+	background-size: cover;
+	text-indent: -9999px;
+	right: 6px;
+}
+
+
+/*Nivo Caption*/
+
+.nivo-html-caption{
+	position: absolute;
+}
+/*en resumen las flechitaas para no equivocarse*/
