@@ -1,0 +1,13 @@
+El primer Trabajo remonta a hace tiempo todo me salio Mal.
+
+en el segundo trabajo tenia mas idea de JS gracias a ciertod Docente
+
+En el TErcer y ultimo Intento. Es un Trabajo de 2 Semanas Entre Busqueda de Informacion, Algunos querys, Cierto Apoyo, mucho tiempo de vizualizacion Para entender las transiciones , Trae elementos que vi y fue dicicil Combinar Para que quede el trabajo aveces no funcionaba o aparecia Un boton qu eal apretar el menu no desaparecia o letras que no cambiaban.
+
+uno de los intentos es hacer letras animadas, Salio mal. 
+
+
+
+
+
+*/ El tercer intento fue el responsable de dormir en clases */
